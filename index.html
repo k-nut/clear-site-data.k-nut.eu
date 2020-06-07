@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Clear Site Data Header example</title>
+  <style>
+    p {
+      margin: 2em 1em;
+      max-width: 60ch;
+      font-family: sans-serif;
+    }
+  </style>
+</head>
+<body>
+<main>
+  <p>You visited this website <span id="counter"></span> times.</p>
+  <p>
+    Reload the page to see the counter increase. It will update a cookie which counts your visits.
+  </p>
+  <p>
+    You can click the link below to make a request which will in include a header with the
+    new <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Clear-Site-Data" target="_blank">
+    Clear-Site-Data</a> header which will remove the cookie. Note that for this removal now JS is required,
+    it is all handled by the browser in response to the header.
+  </p>
+  <p>
+    Note that this currently (June 2020) only works in Firefox and Chrome.
+  </p>
+  <p>
+    <a href="/api/send-clear-header">Reload with the header</a>
+  </p>
+</main>
+<script src="main.js"></script>
+</body>
+</html>
